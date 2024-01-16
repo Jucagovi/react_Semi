@@ -1,15 +1,23 @@
 import React, { Fragment } from "react";
 import "./App.css";
-import DatosContexto from "./contextos/DatosContexto";
-import Personajes from "./componentes/UT05/contexto/Personajes.jsx";
-import Planetas from "./componentes/UT05/contexto/Planetas.jsx";
-import Peliculas from "./componentes/UT05/Soluciones/Peliculas.jsx";
+import logo from "./assets/react_logo.svg";
+import Discentes from "./componentes/01inicio/Discentes.jsx";
+import PrimerComponente from "./componentes/01inicio/PrimerComponente.jsx";
+import Peliculas from "./componentes/01inicio/Peliculas.jsx";
+import Contenido from "./componentes/02posicionamiento/Contenido.jsx";
+import MasContenido from "./componentes/02posicionamiento/MasContenido.jsx";
+import Contenedor from "./componentes/02posicionamiento/Contenedor.jsx";
+import Pie from "./componentes/02posicionamiento/Pie.jsx";
+import Contador from "./componentes/03hooks/useState/Contador.jsx";
+import Mensaje from "./componentes/03hooks/useState/Mensaje.jsx";
+import Objetos from "./componentes/03hooks/useState/Objetos.jsx";
+import Verduras from "./componentes/03hooks/useState/Verduras.jsx";
 
 function App() {
   return (
     <Fragment>
-      <h1>Contextos con useContext.</h1>
-      <Peliculas />
+      <img src={logo} alt='Logo de React.' />
+      <h2>Introducción a la programación reactiva con React.</h2>
     </Fragment>
   );
 }
