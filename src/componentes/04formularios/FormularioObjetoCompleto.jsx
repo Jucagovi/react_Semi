@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import ValorEstado from "../useState/ValorEstado.jsx";
+import ValorEstado from "../03hooks/useState/ValorEstado.jsx";
 
 function FormularioObjetoCompleto() {
   // Crear un estado inicial (objeto con valores por defecto para evitar errores al dibujar).

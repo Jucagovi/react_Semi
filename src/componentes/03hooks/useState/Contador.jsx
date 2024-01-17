@@ -28,8 +28,20 @@ function Contador() {
         {/* <h1>{contador < 0 ? "0" : contador}</h1> */}
         <p>
           {/* Se asignan los eventos a los botones. */}
-          <button onClick={incremento}>Incrementar</button>
-          <button onClick={decremento}>Decrementar</button>
+          <button
+            onClick={() => {
+              incremento();
+            }}
+          >
+            Incrementar
+          </button>
+          <button
+            onClick={() => {
+              decremento();
+            }}
+          >
+            Decrementar
+          </button>
         </p>
       </div>
     </Fragment>

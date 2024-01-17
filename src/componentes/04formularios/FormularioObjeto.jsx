@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ValorEstado from "../useState/ValorEstado";
+import ValorEstado from "../03hooks/useState/ValorEstado.jsx";
 
 function FormularioObjeto() {
   // Crear un estado inicial (objeto con valores por defecto para evitar errores al dibujar).
@@ -30,7 +30,9 @@ function FormularioObjeto() {
             type='text'
             placeholder='Escribe tu nombre.'
             value={discente.nombre}
-            onChange={actualizarDato}
+            onChange={(evento) => {
+              actualizarDato(evento);
+            }}
           />
           <br />
           <label htmlFor='apellidos'>Apellidos:</label>
@@ -40,7 +42,9 @@ function FormularioObjeto() {
             type='text'
             placeholder='Escribe tus apellidos.'
             value={discente.apellidos}
-            onChange={actualizarDato}
+            onChange={(evento) => {
+              actualizarDato(evento);
+            }}
           />
           <br />
           <label htmlFor='modulos'>Correo:</label>
@@ -50,7 +54,9 @@ function FormularioObjeto() {
             type='text'
             placeholder='Escribe tu correo electrónico.'
             value={discente.correo}
-            onChange={actualizarDato}
+            onChange={(evento) => {
+              actualizarDato(evento);
+            }}
           />
         </form>
         <div>

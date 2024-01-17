@@ -1,11 +1,11 @@
 import React, { Fragment, useContext } from "react";
-import { ContextoDeDatos } from "../../../contextos/DatosContexto.jsx";
-import useContextoDatos from "../../../hooks/useContextoDatos.js";
+import { ContextoPersonajes } from "../../../contextos/ProveedorPersonajes.jsx";
+import useContextoDatos from "../../../hooks/useContextoPersonajes.js";
 import Planeta from "./Planeta.jsx";
 
 const Planetas = () => {
   /** Se importan los elementos del contexto (sólo los necesarios). */
-  const { planetas, obtenerPlanetas } = useContext(ContextoDeDatos);
+  const { planetas, obtenerPlanetas } = useContext(ContextoPersonajes);
   /** También es posible utilizar un hook para estas tareas (más "profesional"). */
   //const { planetas, obtenerPlanetas } = useContextoDatos();
   return (

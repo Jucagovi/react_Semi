@@ -20,9 +20,9 @@ import { getDatos } from "../bibliotecas/traerDatos.js";
  * Es necesario que sea de ámbito global, por lo
  * que debe declararse fuera del componente.
  */
-const ContextoDeDatos = createContext();
+const ContextoPersonajes = createContext();
 
-const DatosContexto = ({ children }) => {
+const ProveedorPersonajes = ({ children }) => {
   /** Otra forma de acceder al children en props  */
   //const { children } = props;
 
@@ -59,14 +59,14 @@ const DatosContexto = ({ children }) => {
   const datosAExportar = { personajes, planetas, obtenerPlanetas };
 
   return (
-    <ContextoDeDatos.Provider value={datosAExportar}>
+    <ContextoPersonajes.Provider value={datosAExportar}>
       {children}
-    </ContextoDeDatos.Provider>
+    </ContextoPersonajes.Provider>
   );
 };
 
 /** Se exporta el componente como siempre. */
-export default DatosContexto;
+export default ProveedorPersonajes;
 /** Además hay que exportar el contexto
  * para usarlo con el hook useContext().*/
-export { ContextoDeDatos };
+export { ContextoPersonajes };

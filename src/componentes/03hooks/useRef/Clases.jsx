@@ -20,7 +20,13 @@ const Clases = () => {
     <React.Fragment>
       <div>
         <button onClick={ponerRojo}>Clase rojo</button>
-        <button onClick={ponerAzul}>Clase azul</button>
+        <button
+          onClick={() => {
+            ponerAzul();
+          }}
+        >
+          Clase azul
+        </button>
       </div>
       <div>
         <BotonLimpiar
@@ -29,8 +35,8 @@ const Clases = () => {
         />
       </div>
       <div>
-        <p ref={contenedor2Ref}>Este es el contenedor 1.</p>
-        <p ref={contenedor1Ref}>Este es el contenedor 2.</p>
+        <p ref={contenedor1Ref}>Este es el contenedor 1.</p>
+        <p ref={contenedor2Ref}>Este es el contenedor 2.</p>
       </div>
     </React.Fragment>
   );

@@ -29,12 +29,20 @@ const Listado = () => {
       <div>
         <h2>Listado de elementos a incrementar.</h2>
         <p>
-          <button onClick={anadirElementoInner}>
+          <button
+            onClick={() => {
+              anadirElementoInner();
+            }}
+          >
             Añadir elemento con innerHTML
           </button>
         </p>
         <p>
-          <button onClick={anadirElementoCrear}>
+          <button
+            onClick={() => {
+              anadirElementoCrear();
+            }}
+          >
             Añadir elemento con createElement
           </button>
         </p>

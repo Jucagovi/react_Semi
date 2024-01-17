@@ -1,10 +1,10 @@
 import React, { Fragment, useContext } from "react";
-import { ContextoDeDatos } from "../../../contextos/DatosContexto";
+import { ContextoPersonajes } from "../../../contextos/ProveedorPersonajes";
 import Personaje from "./Personaje";
 
 const Personajes = () => {
   /** Se utliliza el contexto */
-  const { personajes } = useContext(ContextoDeDatos);
+  const { personajes } = useContext(ContextoPersonajes);
   return (
     <Fragment>
       <h2>Personajes de la saga de Star Wars.</h2>

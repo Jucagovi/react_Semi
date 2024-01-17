@@ -7,7 +7,13 @@ const BotonLimpiar = (props) => {
   };
   return (
     <React.Fragment>
-      <button onClick={limpiarClases}>Limpiar clases</button>
+      <button
+        onClick={() => {
+          limpiarClases();
+        }}
+      >
+        Limpiar clases
+      </button>
     </React.Fragment>
   );
 };
